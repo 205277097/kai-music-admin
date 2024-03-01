@@ -1,14 +1,18 @@
 <script setup>
 import { ref } from 'vue'
+import { sayHello } from '../../api/hello';
 
 defineProps({
   msg: String,
 })
 
 const count = ref(0)
-const message = ref("后台111")
+const message = ref("未点击")
 const hi =() => {
-  message.value = "已点击"
+  sayHello().then(res=>{
+    console.log(res)
+    message.value =res.data
+  })
 }
 </script>
 

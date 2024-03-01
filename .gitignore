@@ -17,7 +17,6 @@ dist-ssr
 !.vscode/extensions.json
 .idea
 .vscode
-.yarn-lock
 .cloudbase
 .DS_Store
 *.suo
