@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import { sayHello } from '../../api/hello';
+import { sayHello } from '../api/hello';
 
 defineProps({
   msg: String,
@@ -27,4 +27,4 @@ const hi =() => {
 .read-the-docs {
   color: #888;
 }
-</style>
+</style>../api/hello
